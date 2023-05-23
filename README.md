@@ -1,9 +1,11 @@
 
 # Rapport
 
-**Skriv din rapport här!**
+I started by changing the the base layout in activity_main.xml to a linear layout. After creating the layout I added three widgets, two text widgets and one image widget. In order to display
+an image I added an image to the drawables folder and used it as a source for the imageview widget, written like this "android:src="@drawable/fatcat" />". Lastly I rearranged the widgets by nesting
+them into two children layouts, both linear. The first text was put into the first layout which used a horizontal orientation, and the second text widget and the image was put into the second layer,
+with the text widget being put below the image. The second widget was given a gray background.
 
-_Du kan ta bort all text som finns sedan tidigare_.
 
 ## Följande grundsyn gäller dugga-svar:
 
@@ -16,24 +18,42 @@ _Du kan ta bort all text som finns sedan tidigare_.
 Programkod ska se ut som exemplet nedan. Koden måste vara korrekt indenterad då den blir lättare att läsa vilket gör det lättare att hitta syntaktiska fel.
 
 ```
-function errorCallback(error) {
-    switch(error.code) {
-        case error.PERMISSION_DENIED:
-            // Geolocation API stöds inte, gör något
-            break;
-        case error.POSITION_UNAVAILABLE:
-            // Misslyckat positionsanrop, gör något
-            break;
-        case error.UNKNOWN_ERROR:
-            // Okänt fel, gör något
-            break;
-    }
-}
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User!"
+        android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCC"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="635dp"
+            android:layout_margin="10dp"
+            android:contentDescription="fat cat"
+            android:src="@drawable/fatcat" />
+
+        <TextView
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Behold the kitty!"
+            android:textAlignment="center" />
+    </LinearLayout>
 ```
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+![](catscreen.png)
 
 Läs gärna:
 

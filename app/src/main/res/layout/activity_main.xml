@@ -4,25 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello User!"
-        android:layout_margin="20dp" />
+        android:layout_margin="10dp" />
+    </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Behold the kitty!"
-        android:layout_margin="20dp" />
+        android:background="#CCCCCC"
+        android:orientation="vertical">
 
-    <ImageView
-        android:src="@drawable/fatcat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="fat cat"
-        android:layout_margin="20dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="635dp"
+            android:layout_margin="10dp"
+            android:contentDescription="fat cat"
+            android:src="@drawable/fatcat" />
+
+        <TextView
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Behold the kitty!"
+            android:textAlignment="center" />
+    </LinearLayout>
 
 </LinearLayout>
