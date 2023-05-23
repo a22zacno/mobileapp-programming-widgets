@@ -12,14 +12,14 @@
         android:text="Hello User!"
         android:layout_margin="20dp" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press for cat!"
-        android:clickable="true"
+        android:text="Behold the kitty!"
         android:layout_margin="20dp" />
 
     <ImageView
+        android:src="@drawable/fatcat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="fat cat"
